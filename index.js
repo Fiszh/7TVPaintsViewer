@@ -11,11 +11,6 @@ const user_ids = [
 // Reference to the container where the elements will be appended
 const container = document.getElementById('centered-container');
 
-// Function to set up styles for text elements
-function setUpElement(textElement) {
-    // Currently empty, can be extended for additional element setup
-}
-
 // Function to convert ARGB color to RGBA format
 function argbToRgba(color) {
     if (color < 0) {
