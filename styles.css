@@ -1,3 +1,19 @@
+body {
+    background-color: #121414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-image-overlay {
+    font-size: 100%;
+    white-space: nowrap;
+    color: white;
+}
+
 .paint {
     display: block;
     text-align: center;
