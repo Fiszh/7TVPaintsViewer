@@ -1,0 +1,8 @@
+.paint {
+    display: block;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+}
