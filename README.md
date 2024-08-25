@@ -2,9 +2,11 @@
 
 ## Usage
 
-**Configure the Script**   
+**1. Configure the Script**   
 
 Headover to index.html to configure and add or remove 7TV user IDs.
+
+**2. Open index.html**
 
 ## Notice
 
