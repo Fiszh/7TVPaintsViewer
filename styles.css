@@ -8,12 +8,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.text-image-overlay {
-    font-size: 100%;
-    white-space: nowrap;
-    color: white;
-}
-
 .paint {
     display: block;
     text-align: center;
