@@ -168,7 +168,20 @@ async function load(user_id, textElement) {
         }
 
         // Apply computed styles to the text element
-        textElement.style.cssText = `background-image: ${paintInfo.backgroundImage}; filter: ${paintInfo.shadow};`;
+        textElement.style.backgroundImage = paintInfo.backgroundImage;
+        textElement.style.filter = paintInfo.shadow;
+
+        // Force a reflow to ensure correct dimensions are applied
+        textElement.offsetHeight; 
+
+        // Adjust background-size based on the text width
+        const textWidth = textElement.scrollWidth;
+        const textHeight = textElement.scrollHeight;
+        textElement.style.backgroundSize = `${textWidth}px ${textHeight}px`;
+
+        // Adjust background-position to ensure the gradient starts correctly
+        textElement.style.backgroundPosition = '0 0';
+
     } catch (error) {
         console.error('Error fetching data:', error); // Log error fetching data
     }
@@ -183,4 +196,9 @@ user_ids.forEach(user_id => {
     container.appendChild(textElement);               // Append to the container
 
     load(user_id, textElement);                       // Load data for the user
+
+    const seperator = document.createElement('div'); // Create a new 'div' element
+    seperator.textContent = ' ';               // Set initial text content
+
+    container.appendChild(seperator);               // Append to the container
 });
