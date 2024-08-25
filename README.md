@@ -1,6 +1,6 @@
 # 7TVPaintsViewer
 
-## Usage. 
+## Usage
 
 **Configure the Script**   
 
