@@ -170,6 +170,7 @@ async function load(user_id, textElement) {
         // Apply computed styles to the text element
         textElement.style.backgroundImage = paintInfo.backgroundImage;
         textElement.style.filter = paintInfo.shadow;
+        textElement.style.backgroundColor = 'white';
 
         // Force a reflow to ensure correct dimensions are applied
         textElement.offsetHeight; 
