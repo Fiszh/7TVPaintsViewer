@@ -1,11 +1,7 @@
 // Array of user IDs to fetch data for
 const user_ids = [
-    '64c957b885d4aac49663c2eb', // acid1g
-    '62fb76642f946dc1acae5f6e', // uni1g
-    '60cb6c6794befb7c9370a42c', // psp1g
-    '61685e2aeca325871f35bee5', // deme
-    '60867b015e01df61570ab900', // CupOfKathi
-    '628e93a4539b08d3d9084d88'  // SHIZU
+    '01GAK4CXN00002Z53DR6PAWQVE', // uniidev
+    '01FDSMJ8MG0005Y8ZGBVC26NJ6', // ftk789
 ];
 
 // Reference to the container where the elements will be appended
@@ -203,3 +199,4 @@ user_ids.forEach(user_id => {
 
     container.appendChild(seperator);               // Append to the container
 });
+
